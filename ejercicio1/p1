@@ -1,0 +1,15 @@
+# Estado inicial
+saldo = 500_000      # Saldo de la cuenta
+deposito = 150_000   # Monto a depositar
+retiro = 80_000      # Monto a retirar
+
+# Actualización del estado
+saldo = saldo + deposito   # Se deposita dinero
+saldo = saldo - retiro     # Se retira dinero
+
+# Salida del estado final
+print("Saldo final de la cuenta:", saldo)
+
+interes = 0.02
+saldo_final = saldo*interesa
+print(f"Saldo final con interés: ${saldo_final:.2f}")

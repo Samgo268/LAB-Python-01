@@ -1,0 +1,31 @@
+# Lista inicial de temperaturas en °C
+temperaturas = [22.5, 23.0, 21.8, 24.3, 25.1]
+
+# Operaciones básicas
+print("Temperaturas:", temperaturas)
+
+temperaturas.append(13.4)
+print("Temperaturas nuevas:", temperaturas)
+temperaturas.pop(0)
+print("Temperaturas nuevas:", temperaturas)
+temperaturas.insert(1, 29.3)
+print("Temperaturas nuevas:", temperaturas)
+temperaturas.sort()
+print("Temperaturas nuevas:", temperaturas)
+
+dif = temperaturas[-1]-temperaturas[0]
+print ("diferencia primero y ultimo", dif)
+
+promedio = sum(temperaturas)/len(temperaturas)
+print("promedio", promedio)
+
+encontrar = 25.1
+def posi(encontrar):
+    for i in range (0, len(temperaturas)-1):
+        if temperaturas[i]==encontrar:
+            return i
+    return "no esta"
+        
+print ("posicion elemento buscado(25.1):", posi(encontrar))
+
+def rango
